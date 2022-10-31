@@ -19,3 +19,6 @@ requests.utils.default_user_agent = lambda: random.choice(USER_AGENTS)
 
 if UA_PLATFORM == "android":
     requests.utils.default_user_agent = lambda: random.choice(AND_USER_AGENTS)
+
+def selectRandomUserAgent() -> str:
+    return random.choice(USER_AGENTS)
